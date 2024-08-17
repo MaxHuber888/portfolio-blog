@@ -19,7 +19,6 @@ export function Navbar() {
           <nav
               className="flex items-center justify-between relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
               id="nav"
-              id={"border"}
           >
             <div className="flex items-center space-x-4"> {/* Adjust space between image and text here */}
               <span className="text-xl">MAX HUBER</span>
