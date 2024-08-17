@@ -1,10 +1,25 @@
 @import 'tailwindcss';
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
+/* Import and define the custom Nerd Font */
+@font-face {
+  font-family: 'NerdFont';
+  src: url('public/fonts/BigBlueTermPlusNerdFontMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply the Nerd Font globally */
+html, body {
+  font-family: 'NerdFont', sans-serif;
+}
 
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
 }
 
+/* Other CSS remains the same */
 :root {
   --sh-class: #2d5e9d;
   --sh-identifier: #354150;
@@ -140,9 +155,25 @@ input[type='email'] {
 
 table {
   display: block;
-  max-width: fit-content;
-  overflow-x: auto;
-  white-space: nowrap;
+  max-width: 100%;
+  width: 100%;
+  padding: 2%;
+  border: 1px solid white;
+  border-style: dashed;
+}
+
+#list {
+  list-style-type: disc;
+  list-style-position: inside;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: white;
+  padding: 2%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  letter-spacing: 0.05em; /* Apply the same adjustment to headers if they are bold */
 }
 
 .title {

@@ -13,9 +13,13 @@ export default function Page() {
         early error detection ensures cleaner code, and my preference for dark
         mode, which eases long coding sessions by reducing eye strain.`}
       </p>
-      <div className="my-8">
-        <BlogPosts />
-      </div>
+      <h2 className="mb-4 font-semibold tracking-tighter">Contact Me:</h2>
+        <ul id={"list"}>
+            <li>Email: <a href="mailto:huber.maxi@northeastern.edu">huber.maxi@northeastern.edu</a></li>
+            <li>GitHub: <a href="https://github.com/MaxHuber888">@MaxHuber888</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/max-huber888/">Maximilian Huber</a></li>
+            <li>Twitter: <a href="https://twitter.com/MaxHuber888">@maxhuber888</a></li>
+        </ul>
     </section>
   )
 }
