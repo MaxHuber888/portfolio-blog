@@ -171,6 +171,17 @@ table {
   padding: 2%;
 }
 
+#border {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: white;
+  padding: 2%;
+}
+
+#clickable {
+  cursor: pointer;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   letter-spacing: 0.05em; /* Apply the same adjustment to headers if they are bold */

@@ -6,7 +6,6 @@ type Metadata = {
   publishedAt: string
   summary: string
   image?: string
-  icon?: string
 }
 
 function parseFrontmatter(fileContent: string) {
@@ -50,8 +49,12 @@ function getMDXData(dir) {
   })
 }
 
-export function getBlogPosts() {
-  return getMDXData(path.join(process.cwd(), 'app', 'blog', 'posts'))
+export function getProjects(projType: string) {
+  return getMDXData(path.join(process.cwd(), 'app', 'projects', projType.valueOf().toString()))
+}
+
+export function getAllProjects() {
+  return getProjects("ai").concat(getProjects("coding"), getProjects("gamedev"), getProjects("visual"))
 }
 
 export function formatDate(date: string, includeRelative = false) {
