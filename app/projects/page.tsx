@@ -9,6 +9,10 @@ export default function Page() {
   return (
     <section>
       <h1 className="font-semibold text-2xl mb-8 tracking-tighter">Projects</h1>
+      <p className="mb-4">
+        {`This is my true "portfolio", containing all of the projects that I am proud of. This list includes both 
+        purely personal projects and work done for school or competitions. Projects in each category are listed in chronological order.`}
+      </p>
         <div className="mb-4 border">
           <h2 className="font-semibold text-xl mb-4 tracking-tighter" style={{color:"#00A99D"}}>ML/AI:</h2>
             <p className="mb-4" style={{color:"#00A99D"}}>

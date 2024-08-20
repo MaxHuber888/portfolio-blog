@@ -10,13 +10,11 @@ export default function Page() {
     <section>
       <h1 className="font-semibold text-2xl mb-8 tracking-tighter">My Blog</h1>
         <p className="mb-4">
-            {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+            {`I decided to try and start a personal blog to improve my writing abilities (without the help of generative AI).I will definitely write about AI/ML and other tech-related topics, but I also want to try 
+            writing about my other interests: meditation, spirituality, movies, music, environmentalism, 
+            and whatever else I feel inspired by.`}
         </p>
-        <h2 className="font-semibold text-xl mb-4 tracking-tighter">Recent Posts:</h2>
+        <h2 className="font-semibold text-xl mb-4 tracking-tighter">Blog Posts:</h2>
       <BlogPosts />
     </section>
   )
