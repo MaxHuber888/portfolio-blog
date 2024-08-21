@@ -4,7 +4,7 @@
 /* Import and define the custom Nerd Font */
 @font-face {
   font-family: 'NerdFont';
-  src: url('public/fonts/BigBlueTermPlusNerdFontMono-Regular.ttf') format('truetype');
+  src: url('/fonts/BigBlueTermPlusNerdFontMono-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -19,7 +19,6 @@ html, body {
   color: #fefefe;
 }
 
-/* Other CSS remains the same */
 :root {
   --sh-class: #2d5e9d;
   --sh-identifier: #354150;
@@ -178,6 +177,13 @@ table {
   padding: 2%;
 }
 
+.inline-border {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: white;
+  padding: 0.5%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   letter-spacing: 0.05em; /* Apply the same adjustment to headers if they are bold */
@@ -185,4 +191,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .title {
   text-wrap: balance;
+}
+
+.color-changing-text {
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  animation: colorChange 5s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #00A99D;
+  }
+  50% {
+    color: #7692FF;
+  }
+  100% {
+    color: #F92A82;
+  }
 }
