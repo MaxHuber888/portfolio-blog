@@ -4,9 +4,10 @@ publishedAt: '2024-04-08'
 summary: 'A hybrid quantum/classical CNN which can classify dementia severity of MRI scans.'
 ---
 <div className="flex justify-center space-x-4 my-8">
-    <img alt="DeepSquid Logo" src="../images/deepsquid.png" style={{height: "20%", maxWidth: "250px"}}/>
+    <img alt="MindReader Quantum Logo" src="/images/mindreader.JPG"/>
 </div>
-In this project, developed during the 2023 MIT IQuHack, my team tackled the IBM/Covalent challenge to leverage quantum computing for a service benefiting everyday users. We created a Hybrid Classical-to-Quantum Neural Network designed to detect dementia severity from brain MRI scans, providing an innovative solution to a pressing healthcare need.
+
+In this project my team tackled the IBM/Covalent challenge of the 2023 MIT iQuHack to leverage quantum computing for a service benefiting everyday users. We created a Hybrid Classical-to-Quantum Neural Network designed to detect dementia severity from brain MRI scans, providing an innovative solution to a pressing healthcare need.
 
 <div>
     <h2 className="mb-4 font-semibold tracking-tighter">Links:</h2>
@@ -16,19 +17,20 @@ In this project, developed during the 2023 MIT IQuHack, my team tackled the IBM/
                 Repo</a>
         </li>
         <li>
-            <a href={"https://huggingface.co/spaces/maxhuber/MindReader-Quantum"} className="dark:hover:text-neutral-400">Gradio
+            <a href={"https://huggingface.co/spaces/maxhuber/MindReader-Quantum"}
+               className="dark:hover:text-neutral-400">Gradio
                 Demo</a>
         </li>
     </ul>
     <br/>
 </div>
 
-## Motivation
+## Motivations:
 The hybrid network structure was chosen to combine the strengths of both classical and quantum computing. By using a pretrained classical Convolutional Neural Network (CNN) to extract rich feature vectors from MRI images, we could take advantage of transfer learning. This approach minimizes the need for large amounts of quantum training data, as the classical CNN already provides generalized, high-level representations of the input data.
 
-We then fine-tuned the model using a quantum neural network head. Quantum neural networks (QNNs) offer powerful advantages, especially in terms of parallelization, where quantum computing excels. This allows the model to process complex patterns in the data more efficiently than classical counterparts, particularly when fine-tuning to specific tasks such as detecting varying levels of dementia severity.
+We then fine-tuned the model using a quantum neural network head. Quantum neural networks (QNNs) offer powerful advantages, especially in terms of parallelization, where quantum computing excels. This would allow for this model to retrain often and stay up to date as the dataset grows.
 
-## Implementation and Accessibility
+## Process:
 Our original plan for this project was to connect our model to a React-based frontend, aiming to make the service easily accessible to users via their mobile devices. Having since revisited and polished the project, the model is now available as a Gradio demo on HuggingFace where anyone can try it.
 
 Our ultimate goal was to make advanced medical imaging analysis more accessible, allowing non-expert users to understand their MRI results and receive early dementia screening from their phones, powered by cutting-edge quantum technology.

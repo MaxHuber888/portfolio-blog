@@ -4,10 +4,10 @@ publishedAt: '2024-04-08'
 summary: 'A custom classifier RNN for detecting deepfaked YouTube videos.'
 ---
 <div className="flex justify-center space-x-4 my-8">
-    <img alt="DeepSquid Logo" src="../images/deepsquid.png" style={{height: "20%", maxWidth: "250px"}}/>
+    <img alt="DeepSquid Logo" src="/images/deepsquid.png" style={{height: "20%", maxWidth: "250px"}}/>
 </div>
 
-DeepSquid is a video classifier model that was trained on the <a href="https://www.zerofox.com/deepstar-open-source-toolkit/" className="dark:hover:text-neutral-400">Deepstar</a> deepfaked YouTube video dataset.
+DeepSquid is a custom deepfake detection RNN designed to help users identify fake YouTube videos. Integrated with a Gradio web demo, DeepSquid allows users to simply paste in a YouTube URL to detect potential deepfakes. Training was done on the <a href="https://www.zerofox.com/deepstar-open-source-toolkit/" className="dark:hover:text-neutral-400">Deepstar</a> dataset of real and deepfaked YouTube videos. We saw promising results during testing, as the RNN model surpassed the Deepstar example models in training and validation accuracy.
 
 <div>
     <h2 className="mb-4 font-semibold tracking-tighter">Links:</h2>
@@ -19,6 +19,23 @@ DeepSquid is a video classifier model that was trained on the <a href="https://w
         <li>
             <a href={"https://huggingface.co/spaces/maxhuber/deepsquid"} className="dark:hover:text-neutral-400">Gradio
                 Demo</a>
+        </li>
+    </ul>
+    <br/>
+</div>
+
+## Motivations:
+
+I was enthusiastic to do this project because the rise of generative AI has made separating what is real and what is fake online much more difficult. I think this confusion can have serious real world implications, and I wanted to gain some experience in detecting AI-generated artifacts. This project was also my first time using TensorFlow and Keras, all my previous neural network projects have been in PyTorch.
+
+## Process:
+
+You can read more about the specifics of my group's process in creating this project here:
+
+<div>
+    <ul id={"list"}>
+        <li>
+            <a href={"/files/deepsquid.pdf"} className="dark:hover:text-neutral-400">Final Paper</a>
         </li>
     </ul>
     <br/>
