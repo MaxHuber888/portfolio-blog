@@ -2,4 +2,31 @@
 title: 'The Chunk Splitting Problem'
 publishedAt: '2024-04-08'
 summary: 'A comparative analysis of indexing methods for RAG, and the introduction of a novel experimental method.'
+status: 'CLOSED'
 ---
+This was my final project for my NLP class, but I had started working on it months before the class started. I tested three existing indexing methods: Rule-Based Chunking, Semantic Chunking, and Slide Retrieval. Additionally, I designed a fourth experimental method, Neural Network Estimation Retrieval (NNER), for indexing a text corpus. NNER uses a neural network (PyTorch) to create a linear representation of a corpus, and learns to extract information from a specific location of the corpus regardless of how it is broken into chunks, which overcomes the chunk splitting problem and saving on embedding costs.
+
+Unfortunately, in my testing the NNER method severely underperformed, which could be due to a wide range of factors (listed in the attached report). I am currently not interested in continuing this project, although I still believe that with the proper adjustments NNER could be a viable alternative.
+
+<div>
+    <h2 className="mb-4 font-semibold tracking-tighter">Links:</h2>
+    <ul id={"list"}>
+        <li>
+            <a href={"https://github.com/MaxHuber888/comparative-indexing-analysis"}
+               className="dark:hover:text-neutral-400">GitHub
+                Repo</a>
+        </li>
+        <li>
+            <a href={"../files/chunk-splitting-prob.pdf"} className="dark:hover:text-neutral-400">Final Report</a>
+        </li>
+    </ul>
+    <br/>
+</div>
+
+## Motivations:
+
+I had become aware of the "chunk splitting problem" while working on an RAG system for my co-op, and I wanted to experiment with an idea I had for a new indexing method which I believed had potential to circumvent this problem. This project was a way for me to apply what I learned about RAG on my co-op, while also exercising my creative spirit by trying to innovate in the RAG space.
+
+## Process:
+
+I made the repo for this project clean and extendable, in case I wanted to add new indexing methods, and to make it easier to test them fairly against each other. There is still more I want to do with this project but I have already spent a lot of time on it and I still don't know if NNER will actually work.

@@ -28,8 +28,8 @@ export default function Page() {
         </div>
       </div>
       <p className="mb-4">
-        Hi, I’m Max Huber. I’m a CS student and researcher with a focus on AI
-        and a curiosity that extends beyond algorithms.
+        Hi, I’m Max Huber. I’m a CS/AI student and researcher with a curiosity
+        that extends beyond algorithms.
       </p>
       <p className="mb-4">
         I recently completed my Bachelor's Degree in Computer Science at
@@ -55,8 +55,8 @@ export default function Page() {
         <a href="/projects" className={"dark:hover:text-neutral-400"}>
           projects
         </a>{" "}
-        page for a list of all of my AI, software development, game development,
-        and graphic design projects.
+        page for a list of all of my AI, software dev, game dev, and graphic
+        design projects.
       </p>
     </section>
   );

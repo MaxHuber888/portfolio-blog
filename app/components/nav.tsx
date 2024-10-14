@@ -23,7 +23,9 @@ export function Navbar() {
           <div className="flex items-center space-x-4">
             {" "}
             {/* Adjust space between image and text here */}
-            <span className="text-xl hidden md:inline">MAX HUBER</span>
+            <span className="text-xl hidden md:inline">
+              <b>MAX HUBER</b>
+            </span>
           </div>
           <div className="flex flex-row space-x-6 items-center justify-center w-full md:w-auto">
             {Object.entries(navItems).map(([path, { name }]) => {
