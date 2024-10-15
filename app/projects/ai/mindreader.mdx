@@ -8,10 +8,10 @@ status: 'CLOSED'
     <img alt="MindReader Quantum Logo" src="/images/mindreader.JPG"/>
 </div>
 
-In this project my team tackled the IBM/Covalent challenge of the 2023 MIT iQuHack to leverage quantum computing for a service benefiting everyday users. We created a Hybrid Classical-to-Quantum Neural Network designed to detect dementia severity from brain MRI scans, providing an innovative solution to a pressing healthcare need.
+As part of my team's submission for the IBM/Covalent challenge of the 2023 MIT iQuHack hackathon, we implemented a Hybrid Classical-to-Quantum Neural Network designed to detect dementia severity from brain MRI scans.
 
+## Links:
 <div>
-    <h2 className="mb-4 font-semibold tracking-tighter">Links:</h2>
     <ul id={"list"}>
         <li>
             <a href={"https://github.com/MaxHuber888/MindReader-Quantum"} className="dark:hover:text-neutral-400">GitHub
@@ -19,19 +19,24 @@ In this project my team tackled the IBM/Covalent challenge of the 2023 MIT iQuHa
         </li>
         <li>
             <a href={"https://huggingface.co/spaces/maxhuber/MindReader-Quantum"}
-               className="dark:hover:text-neutral-400">Gradio
-                Demo</a>
+               className="dark:hover:text-neutral-400">Gradio Demo</a>
         </li>
     </ul>
     <br/>
 </div>
 
 ## Motivations:
-The hybrid network structure was chosen to combine the strengths of both classical and quantum computing. By using a pretrained classical Convolutional Neural Network (CNN) to extract rich feature vectors from MRI images, we could take advantage of transfer learning. This approach minimizes the need for large amounts of quantum training data, as the classical CNN already provides generalized, high-level representations of the input data.
+Since the motivation behind this project was dictated by the challenge prompt, I will instead talk about why we chose this specific network architecture for this use case.
 
-We then fine-tuned the model using a quantum neural network head. Quantum neural networks (QNNs) offer powerful advantages, especially in terms of parallelization, where quantum computing excels. This would allow for this model to retrain often and stay up to date as the dataset grows.
+The hybrid network structure was chosen to combine the strengths of both classical and quantum computing. By using a pretrained classical Convolutional Neural Network (CNN) to extract rich feature vectors from MRI images, we were able to take advantage of "transfer learning", which helped us get a working prototype running more quickly for the hackathon. This approach removes the need to train the quantum net on rich image data, as the classical CNN already provides generalized, high-level representations of the input data.
 
-## Process:
-Our original plan for this project was to connect our model to a React-based frontend, aiming to make the service easily accessible to users via their mobile devices. Having since revisited and polished the project, the model is now available as a Gradio demo on HuggingFace where anyone can try it.
+While quantum neural networks are not very practical yet, the parallelization which can be achieved theoretically allows quantum models to be trained more efficiently than classical models. Given time for the hardware to catch up, this would allow for our model to retrain often and stay up to date as its MRI dataset grows.
 
-Our ultimate goal was to make advanced medical imaging analysis more accessible, allowing non-expert users to understand their MRI results and receive early dementia screening from their phones, powered by cutting-edge quantum technology.
+## Implementation:
+Our original plan for this project was to connect our model to a React Native frontend, aiming to make the service easily accessible to users via their mobile devices. Having since revisited and polished the project, the model is now available as a Gradio demo on HuggingFace where anyone can try it.
+
+The model is implemented in Python using PyTorch and Pennylane, and used a preprocessed version of the <a href="https://www.kaggle.com/datasets/jboysen/mri-and-alzheimers" className="dark:hover:text-neutral-400">MRI and Alzheimer's</a> dataset from Kaggle.
+
+## Future Work:
+- Train on larger dataset
+- Investigate a better paradigm for inferring dementia severity (classification may not be the best model type for this task)
