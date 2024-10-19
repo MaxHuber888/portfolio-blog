@@ -39,8 +39,8 @@ export default function Page() {
       <p className="mb-4">
         <strong className={"color-changing-text"}>
           {" "}
-          I am also seeking a Spring 2025 co-op in AI, data science/engineering,
-          or software development!{" "}
+          I am also seeking a Spring 2025 or Summer 2025 co-op in AI, data
+          science/engineering, or software development!{" "}
         </strong>
       </p>
       <Contact />
