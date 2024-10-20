@@ -7,6 +7,7 @@ type Metadata = {
   summary: string;
   image?: string;
   status?: string;
+  emoji?: string;
 };
 
 function parseFrontmatter(fileContent: string) {
