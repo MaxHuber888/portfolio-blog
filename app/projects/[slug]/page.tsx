@@ -21,6 +21,7 @@ export function generateMetadata({ params }) {
     title,
     publishedAt: publishedTime,
     summary: description,
+    emoji: emoji,
     image,
   } = post.metadata;
   let ogImage = image
