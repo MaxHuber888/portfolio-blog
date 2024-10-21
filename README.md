@@ -4,6 +4,8 @@
 
 Welcome to my personal website! This is a place where I showcase my work, share insights on topics I’m passionate about, and provide updates on various projects I'm working on. Here, you’ll find blog posts, project portfolios, and a range of content spanning AI, game development, spirituality, physics, health sciences, and more.
 
+You can visit the website here: [](https://maxhuber.vercel.app)
+
 ## Features
 
 - **Projects**: A collection of my past and current projects, ranging from AI applications to game development. Each project has a detailed description, tech stack, and links to the repository (where applicable).
