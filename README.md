@@ -1,4 +1,4 @@
-[Portfolio OG image](public/images/og.png)
+![Portfolio OG image](public/og.png)
 
 # Max Huber's Portfolio
 
