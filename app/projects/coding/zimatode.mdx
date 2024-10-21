@@ -1,0 +1,34 @@
+---
+title: 'Zimatode'
+publishedAt: '2024-10-21'
+summary: 'A physics-based music visualizer which creates simulations that respond to audio.'
+status: 'ACTIVE'
+emoji: '🎹'
+---
+<div className="flex justify-center space-x-4 my-8">
+    <img alt="Zimatode Repo Card" src="/images/zimatode.png"/>
+</div>
+
+This is a Python program which allows you to generate and render a simulation that dynamically reacts to any audio file. This is part of a more ambitious project to create a software which allows users to easily create music visualizers. Currently there are 4 supported simulation types: a spring-based visualizer, a particle-based visualizer, a pressure-grid-based visualizer, and a branching visualizer.
+
+## Links:
+<div>
+    <ul id={"list"}>
+        <li>
+            <a href={"https://github.com/MaxHuber888/zimatode"}>GitHub
+                Repo</a>
+        </li>
+    </ul>
+    <br/>
+</div>
+
+## Motivations:
+I want to build this program out into a tool which allows anyone to create a visualizer for their music very easily. I am also enjoying learning about fluid and hard-body physics simulations, fractals, and audio analysis through this project.
+
+## Implementation:
+This application was written in Python and uses [pygame](https://www.pygame.org/) to create the simulations and [librosa](https://librosa.org/) to handle the audio analysis.
+
+## Future Work:
+- Fixing the branching and grid simulations to work as intended
+- Fixing the multi-frequency impulses
+- Adding multi-frequency capabilities to all simulations
