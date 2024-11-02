@@ -29,7 +29,8 @@ export default function Page() {
       </div>
       <p className="mb-4">
         Hi, I’m Max Huber. I’m a CS/AI student and researcher with a curiosity
-        that extends beyond algorithms.
+        that extends beyond algorithms and a passion for building great
+        software.
       </p>
       <p className="mb-4">
         I recently completed my Bachelor's Degree in Computer Science at
