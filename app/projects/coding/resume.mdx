@@ -1,0 +1,61 @@
+---
+title: 'resu.me'
+publishedAt: '2024-12-1'
+summary: 'A modular resume builder that allows for easy content curation, automatic formatting, and leverages AI tools.'
+status: 'ACTIVE'
+emoji: '📜'
+---
+<div className="flex justify-center space-x-4 my-8">
+    <img alt="resu.me Repo Card" src="/images/resume.png"/>
+</div>
+
+resu.me is a resume creation tool that allows users to easily create, polish, and organize their experiences and skills as independent modules. It leverages AI tools to automatically format the resume and provide suggestions for content.
+
+The main efforts of this project were in ensuring that the user experience was intuitive, and that the modular workflow was easy to understand and navigate. This involved a lot of user testing and iteration.
+
+## Links:
+<div>
+    <ul id={"list"}>
+        <li>
+            <a href={"/files/hci-final.pdf"}>Final Report</a>
+        </li>
+    </ul>
+    <br/>
+</div>
+
+## Demo Video:
+<div className="border">
+    <div style={{ position: 'relative', paddingTop: '56.25%', width: '100%' }}>
+    <iframe
+        style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        }}
+        src="https://www.youtube.com/embed/n5JGkqBn5s8?si=FfvsfuRzefdIV3RL"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+    ></iframe>
+    </div>
+</div>
+
+## Motivations:
+This project was a capstone assignment for my Human-Computer Interaction course. We were tasked with creating an interface that helped university students solve some common problem. I chose to create a resume builder because I think that resumes are a common pain point for students, and that most students use tools which are not specifically designed for this task. We did a lot of user testing and iteration to ensure that the user experience was intuitive and the modular workflow was well-received.
+
+## Implementation:
+This web app was written in TypeScript and uses the Next.js framework. I used a lot of shadcn/ui components to ensure that the UI was consistent and modern. User authentication and data storage was implemented using Firebase. The AI tools are currently non-functional, but I plan on implementing them using an LLM API like OpenAI or Anthropic in the future.
+
+## Future Work:
+- Fix a few minor bugs
+- Fully implement the AI Contribution feature
+- Allow for exporting the resume in a variety of formats
+- Allow for automatic formatting of the resume
+- Allow for programmatic curation of resume modules
+- Add project, skill, and education modules
+- Allow for filtering and sorting of modules
+- Create "contribution groups" which allow for highlighting different aspects of an experience
