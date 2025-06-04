@@ -35,14 +35,7 @@ export default function Page() {
       <p className="mb-4">
         I recently completed my Bachelor's Degree in Computer Science at
         Northeastern University and I’m now pursuing a Master’s Degree in AI at
-        Northeastern.
-      </p>
-      <p className="mb-4">
-        <strong className={"color-changing-text"}>
-          {" "}
-          I am also seeking a Spring 2025 or Summer 2025 co-op in AI, data
-          science/engineering, or software development!{" "}
-        </strong>
+        Northeastern. I am currently working at the Movement Neuroscience Lab at Northeastern, doing research work related to network science and computational neuroscience.
       </p>
       <Contact />
       <p className="mb-4">
