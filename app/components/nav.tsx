@@ -24,7 +24,7 @@ export function Navbar() {
             {" "}
             {/* Adjust space between image and text here */}
             <span className="text-xl hidden md:inline">
-              <b>MAX HUBER</b>
+              <b>Maximilian Huber</b>
             </span>
           </div>
           <div className="flex flex-row space-x-6 items-center justify-center w-full md:w-auto">

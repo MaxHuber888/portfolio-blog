@@ -9,11 +9,13 @@ emoji: '🐍'
     <img alt="ZerePy Logo" src="/images/zerepy.png"/>
 </div>
 
-ZerePy is an open-source Python framework designed to let you deploy your own agents on X (formerly Twitter), powered by OpenAI or Anthropic LLMs.
+ZerePy is an open-source Python framework designed to let you deploy your own AI agents on X (formerly Twitter), powered by OpenAI or Anthropic LLMs. The framework also supports a ton of blockchain actions, some of which are unique to ZerePy in the agent space.
 
-ZerePy is built from a modularized version of the Zerebro backend. With ZerePy, you can launch your own agent with similar core functionality as Zerebro. For creative outputs, you'll need to fine-tune your own model.
+The GitHub repo has over 500 stars and has been used as a base in multiple hackathons.
 
-This project was created in collaboration with the <a href="https://www.parallelpolis.llc" className="dark:hover:text-neutral-400">Parallel Polis</a> research group and the <a href="https://zerebro.org" className="dark:hover:text-neutral-400">Zerebro</a> team.
+My main contributions to this project were designing the initial class structure for ZerePy, adding basic Twitter and OpenAI/Anthropic support, and designing the LangGraph decision flow which allows agents to orchestrate sequential actions from plain text requests, make decisions based on previous actions and results, and even operate autonomously without human input.
+
+This project was created while working with the <a href="https://blorm.com" className="dark:hover:text-neutral-400">Blorm</a> team.
 
 ## Links:
 <div>
@@ -31,8 +33,6 @@ This project was created in collaboration with the <a href="https://www.parallel
 
 ## Motivations:
 I was excited to work on this project because I did not have any open-source project experience and I wanted to explore what was possible with LLM-powered agents.
-
-While there were other people working on this, and a lot of functionality came through open-source contributions, I designed the original structure and the autonomous task graph.
 
 ## Implementation:
 This framework is built with Python.
